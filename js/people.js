@@ -1,13 +1,10 @@
 // # FUNZIONE COSTRUZIONE PERSONA
 
-const { firstName, lastName } = require("./names");
-const { hobbyOne, hobbyTwo, hobbyThree } = require("./hobbies");
+const fullName = require("./names");
+const hobbies = require("./hobbies");
 
 const init = () => {
-  const fullName = `${firstName} ${lastName}`;
-  const hobbies = `${hobbyOne} ${hobbyTwo} ${hobbyThree}`;
-
-  person = {
+  const person = {
     fullName,
     hobbies,
   };
@@ -15,4 +12,4 @@ const init = () => {
   return person;
 };
 
-int();
+console.log(init());

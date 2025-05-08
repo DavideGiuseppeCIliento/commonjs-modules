@@ -1,9 +1,12 @@
 // # FUNZIONE COSTRUZIONE PERSONA
 
-const fullName = require("./names");
-const hobbies = require("./hobbies");
+const getFullName = require("./names");
+const getHobbies = require("./hobbies");
 
 const init = () => {
+  const fullName = getFullName("Davide", "Ciliento");
+  const hobbies = getHobbies("lettura", "musica", "viaggi");
+
   const person = {
     fullName,
     hobbies,
